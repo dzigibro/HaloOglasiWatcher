@@ -1,18 +1,12 @@
-Halo oglasi watcher, emails new listings
-Enable app password on gmail (outlook is nightmare) 
+# HaloOglasi Watcher
+Automate your real estate hunt like a machine. Tracks new listings from Halo Oglasi and blasts them straight to your inbox—before anyone else even sees them.
 
-In main dir where main.py is, create config.yaml 
+### Features
+- **Instant alerts** for new listings
+- Simple YAML config
+- Gmail SMTP support (App Password recommended)
+- Deploy in 60 seconds flat
 
-Blast this inside 
-
-location_url: "https://www.halooglasi.com/nekretnine/prodaja-stanova/beograd?ulica_t=###EXAMPLE###  # or any search URL
-email:
-  smtp_server: "smtp.gmail.com"
-  smtp_port: 587
-  username: "sender@gmail.com"
-  password: "YourGmailAppPass"        # use a Gmail App Password
-  to: "YourEmailForNotifications@any.com"
-
-
-
-Not bad.
+### Quick Start
+1. Clone repo
+2. Create `config.yaml`:
