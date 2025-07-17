@@ -1,5 +1,5 @@
 # HaloOglasi Watcher
-Automate your real estate hunt like a machine. Tracks new listings from Halo Oglasi and blasts them straight to your inbox—before anyone else even sees them.
+Automate your real estate hunt like a machine. Tracks new listings from Halo Oglasi and blasts them straight to your inbox
 
 ### Features
 - **Instant alerts** for new listings
