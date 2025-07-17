@@ -10,3 +10,14 @@ Automate your real estate hunt like a machine. Tracks new listings from Halo Ogl
 ### Quick Start
 1. Clone repo
 2. Create `config.yaml`:
+location_url: "YOUR_SEARCH_URL"
+email:
+smtp_server: "smtp.gmail.com"
+smtp_port: 587
+username: "sender@gmail.com"
+password: "GmailAppPassword"
+to: "recipient@example.com"
+
+Run main
+
+NJoy. 
