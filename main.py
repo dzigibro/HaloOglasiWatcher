@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 import ssl, smtplib, requests, yaml
 from pathlib import Path
+from filters import listing_passes
 from email.message import EmailMessage
 from bs4 import BeautifulSoup
 
@@ -38,6 +39,21 @@ def fetch(url: str):
 
 
 
+results = []
+for raw in scraped_listings:  # whatever your loop is
+    item = {
+        "title": raw.title,
+        "location": raw.location,       # e.g., "Novi Beograd - Blok 70"
+        "price_eur": raw.price_eur,     # make sure you parse to number
+        "url": raw.url,
+        "description": raw.description, # if you have it; else ""
+    }
+    passed = listing_passes(item)
+    if passed:
+        results.append(passed)
+
+# (optional) sort desperate first
+results.sort(key=lambda x: (-x.get("desperation_score",0), x.get("price_eur", 1e12)))
 
 
 
