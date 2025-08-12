@@ -1,0 +1,14 @@
+# config.yaml
+max_price_eur: 65000
+areas:
+  - "Novi Beograd"
+  - "Zemun"
+  - "Vracar"
+desperation_keywords:
+  - "hitno"
+  - "brzo"
+  - "dogovor"
+  - "fast"
+  - "deal"
+anti_keywords:
+  - "nije hitno"
